@@ -1,6 +1,7 @@
 
 :root {
     --light-blue: #1d9bf0;
+    --black: rgb(15, 20, 25);
 }
 *,*::after,*::before {
     box-sizing: border-box;
@@ -11,6 +12,7 @@
 }
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 body {
@@ -20,3 +22,64 @@ body {
 body > * {
     border: 1px solid gray;
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+
+/**SITE HEADER**/
+.site-header {
+    padding: 0 5rem;
+}
+.site-header__logo{
+    display: block;
+    padding: 1rem 0;
+    margin-bottom: 0.5rem;
+}
+.site-header__logo  svg {
+    fill: currentColor;
+    color: var(--light-blue);
+    height: 40px;
+}
+
+.navbar {
+    margin-bottom: 2rem;
+}
+.navbar__item {
+    color: var(--black);
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.navbar__item > a {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 3rem;
+}
+.navbar__item svg {
+    fill: currentColor;
+    color: var(--black);
+    height: 25px;
+}
+
+.main-button {
+    background-color: var(--light-blue);
+    border: none;
+    border-radius: 3rem;
+    color: white;
+    display: block;
+    font-size: 1.7rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    width: 100%;
+}
+
